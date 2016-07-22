@@ -18,7 +18,7 @@ fis.match('*.scss', {
 	parser: fis.plugin('node-sass',{
 		
 	})
-})
+});
 
 fis.match('*.css', {
   optimizer: fis.plugin('clean-css')
