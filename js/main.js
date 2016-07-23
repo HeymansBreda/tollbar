@@ -1,10 +1,11 @@
 requirejs.config({
 	paths: {
-		jquery: 'jquery'
+		jquery: 'jquery-1.8.0'
 	}
 });
 
-requirejs(['jquery','vaildate'], function(jquery, vaildate){
-	// var $ = window.jquery;
-	console.log(vaildate.isEqual(1,2));
-})
+requirejs(['jquery','backtop'], function($, BackTop){
+    new BackTop.BackTop($('#backTop'),{
+        mode: 'move',
+    })
+});
